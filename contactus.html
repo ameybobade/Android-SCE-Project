@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" href="CSS/contactus.css">
 </head>
 <body>
     
@@ -30,6 +31,27 @@
     </div>
 </nav>
     
+<main>
+  <div class="container">
+    <form action="">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
   
+      <label for="lname">Phone No.</label>
+      <input type="text" id="phoneno" name="phoneno" placeholder="Phone number">
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write your Query" style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit" onclick="contactus()">
+    </form>
+  </div>
+</main>
+<script>
+  function contactus() {
+    alert("We have recorded your Query!!\nWe will reach out to you soon with a solution!");
+    
+  }
+</script>  
 </body>
 </html>

@@ -9,25 +9,92 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <script src="Javascript/dashboard.js"></script>
 
 </head>
-<body>
-<img class="wave" src="wave.jpg">    
-<nav class="navbar navbar-inverse">
+<body> 
+<nav class="navbar navbar-inverse nav-tabs">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Vishwa-Hackathon</a>
       </div>
     
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-        <li><a href="Login/Login.html"><span class="glyphicon glyphicon-log-in"></span> Login In</a></li>
+        <li></a><span class="glyphicon glyphicon-user"></span> Register</a></li>
+        <li><button class="glyphicon glyphicon-log-in" onclick="document.getElementById('id01').style.display='block'"> Login</button></li>
       </ul>
     </div>
 </nav>
 
+<section>
+  <div class="row">
+    
+    <div class="col-sm-9 " style="border-style: dashed;">
+      Photo Gallery
+    </div>
 
+    <div class="col-sm-3" style="border: 2px; border-style: dashed;">
+      <h2>Important Dates</h2>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Events</th>
+            <th>Dates</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Regisration Starts On</td>
+            <td>14/04/2021</td>
+          </tr>
+          <tr>
+            <td>Regisration Ends On</td>
+            <td>15/04/2021</td>
+          </tr>
+          <tr>
+            <td>Idea Submition Ends On</td>
+            <td>30/04/2021</td>
+          </tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!----Login Form  -->
+
+<section>
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <form class="modal-content" action="">
+      <div class="container">
+        <h1>Login</h1>
+        <hr>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+  
+        <a href="#" style="color: rgb(22, 111, 141); text-decoration: none;">Forgot Password?</a>
+
+
+  
+        <div class="clearfix">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="submit" onclick="openWin()" class="loginbtn">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer>
+
+</footer>
   
 </body>
 </html>
